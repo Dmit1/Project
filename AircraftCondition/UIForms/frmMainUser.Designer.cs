@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
@@ -60,6 +59,7 @@
             this.metroButton2.TabIndex = 2;
             this.metroButton2.Text = "Техническое обслуживание ВС";
             this.metroButton2.UseSelectable = true;
+            this.metroButton2.Click += new System.EventHandler(this.metroButton2_Click);
             // 
             // metroButton3
             // 
@@ -72,6 +72,7 @@
             this.metroButton3.TabIndex = 3;
             this.metroButton3.Text = "Компоненты ВС";
             this.metroButton3.UseSelectable = true;
+            this.metroButton3.Click += new System.EventHandler(this.metroButton3_Click);
             // 
             // tableLayoutPanel1
             // 

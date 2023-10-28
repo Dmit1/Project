@@ -210,6 +210,12 @@
     <Compile Include="UIForms\frmAircraft.Designer.cs">
       <DependentUpon>frmAircraft.cs</DependentUpon>
     </Compile>
+    <Compile Include="UIForms\frmComponent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\frmComponent.Designer.cs">
+      <DependentUpon>frmComponent.cs</DependentUpon>
+    </Compile>
     <Compile Include="UIForms\frmDBConfig.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +233,12 @@
     </Compile>
     <Compile Include="UIForms\frmMainAdmin.Designer.cs">
       <DependentUpon>frmMainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UIForms\frmMaintenance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UIForms\frmMaintenance.Designer.cs">
+      <DependentUpon>frmMaintenance.cs</DependentUpon>
     </Compile>
     <Compile Include="UIForms\frmMainUser.cs">
       <SubType>Form</SubType>
@@ -252,6 +264,9 @@
     <EmbeddedResource Include="UIForms\frmAircraft.resx">
       <DependentUpon>frmAircraft.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\frmComponent.resx">
+      <DependentUpon>frmComponent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UIForms\frmDBConfig.resx">
       <DependentUpon>frmDBConfig.cs</DependentUpon>
     </EmbeddedResource>
@@ -260,6 +275,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UIForms\frmMainAdmin.resx">
       <DependentUpon>frmMainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\frmMaintenance.resx">
+      <DependentUpon>frmMaintenance.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UIForms\frmMainUser.resx">
       <DependentUpon>frmMainUser.cs</DependentUpon>

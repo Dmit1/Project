@@ -19,5 +19,17 @@ namespace AircraftCondition.UIForms
             frmAircraft frm = new frmAircraft();
             frm.ShowDialog();
         }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            frmMaintenance frm = new frmMaintenance();
+            frm.ShowDialog();
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            frmComponent frm = new frmComponent();
+            frm.ShowDialog();
+        }
     }
 }
