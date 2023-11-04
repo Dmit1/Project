@@ -19,7 +19,10 @@ namespace AircraftCondition
             {
                 if (UserCredentials.Roles.Contains("Admin"))
                     Application.Run(new frmMainAdmin());
-                else Application.Run(new frmMainUser());
+                else if (UserCredentials.Roles.Contains("User"))
+                    Application.Run(new frmMainUser());
+                else if(UserCredentials.Roles.Contains("Plan"))
+                      Application.Run(new frmPlan()); 
             }
         }
     }

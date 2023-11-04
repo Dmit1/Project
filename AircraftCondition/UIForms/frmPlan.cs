@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace AircraftCondition.UIForms
 {
-    public partial class Plan : Form
+    public partial class frmPlan : Form
     {
-        public Plan()
+        public frmPlan()
         {
             InitializeComponent();
         }

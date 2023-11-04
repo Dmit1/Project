@@ -1,6 +1,6 @@
 ﻿namespace AircraftCondition.UIForms
 {
-    partial class Plan
+    partial class frmPlan
     {
         /// <summary>
         /// Required designer variable.
