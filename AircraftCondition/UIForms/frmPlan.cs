@@ -16,5 +16,14 @@ namespace AircraftCondition.UIForms
         {
             InitializeComponent();
         }
+
+        private void frmPlan_Load(object sender, EventArgs e)
+        {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mTADataSet1.vGetAllAircraftInfo". При необходимости она может быть перемещена или удалена.
+            this.vGetAllAircraftInfoTableAdapter.Fill(this.mTADataSet1.vGetAllAircraftInfo);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "mTADataSet.vGetAllFlight". При необходимости она может быть перемещена или удалена.
+            this.vGetAllFlightTableAdapter.Fill(this.dsFlightInfo.vGetAllFlight);
+
+        }
     }
 }

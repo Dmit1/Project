@@ -202,6 +202,16 @@
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Helpers\UserCredentials.cs" />
     <Compile Include="Helpers\Validator.cs" />
+    <Compile Include="MTADataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTADataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MTADataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MTADataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIForms\frmAircraft.cs">
@@ -288,6 +298,9 @@
     <EmbeddedResource Include="UIForms\frmMainUser.resx">
       <DependentUpon>frmMainUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UIForms\frmPlan.resx">
+      <DependentUpon>frmPlan.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="dsGetAllUsersData.xsc">
       <DependentUpon>dsGetAllUsersData.xsd</DependentUpon>
     </None>
@@ -298,6 +311,28 @@
     </None>
     <None Include="dsGetAllUsersData.xss">
       <DependentUpon>dsGetAllUsersData.xsd</DependentUpon>
+    </None>
+    <None Include="MTADataSet.xsc">
+      <DependentUpon>MTADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MTADataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MTADataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MTADataSet.xss">
+      <DependentUpon>MTADataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MTADataSet1.xsc">
+      <DependentUpon>MTADataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MTADataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MTADataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MTADataSet1.xss">
+      <DependentUpon>MTADataSet1.xsd</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

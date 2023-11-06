@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="MTADataSet1" targetNamespace="http://tempuri.org/MTADataSet1.xsd" xmlns:mstns="http://tempuri.org/MTADataSet1.xsd" xmlns="http://tempuri.org/MTADataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="MTAConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="MTAConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.AircraftCondition.Properties.Settings.GlobalReference.Default.MTAConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vGetAllAircraftInfoTableAdapter" GeneratorDataComponentClassName="vGetAllAircraftInfoTableAdapter" Name="vGetAllAircraftInfo" UserDataComponentName="vGetAllAircraftInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="MTAConnectionString (Settings)" DbObjectName="MTA.dbo.vGetAllAircraftInfo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT RegNumber, Name, ManufactureDate, ManufactureName, ManufactureNumber FROM dbo.vGetAllAircraftInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="RegNumber" DataSetColumn="RegNumber" />
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="ManufactureDate" DataSetColumn="ManufactureDate" />
+              <Mapping SourceColumn="ManufactureName" DataSetColumn="ManufactureName" />
+              <Mapping SourceColumn="ManufactureNumber" DataSetColumn="ManufactureNumber" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="MTADataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="MTADataSet1" msprop:Generator_DataSetName="MTADataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vGetAllAircraftInfo" msprop:Generator_RowEvHandlerName="vGetAllAircraftInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="vGetAllAircraftInfoRowDeleted" msprop:Generator_RowDeletingName="vGetAllAircraftInfoRowDeleting" msprop:Generator_RowEvArgName="vGetAllAircraftInfoRowChangeEvent" msprop:Generator_TablePropName="vGetAllAircraftInfo" msprop:Generator_RowChangedName="vGetAllAircraftInfoRowChanged" msprop:Generator_RowChangingName="vGetAllAircraftInfoRowChanging" msprop:Generator_TableClassName="vGetAllAircraftInfoDataTable" msprop:Generator_RowClassName="vGetAllAircraftInfoRow" msprop:Generator_TableVarName="tablevGetAllAircraftInfo" msprop:Generator_UserTableName="vGetAllAircraftInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="RegNumber" msprop:Generator_ColumnPropNameInRow="RegNumber" msprop:Generator_ColumnPropNameInTable="RegNumberColumn" msprop:Generator_ColumnVarNameInTable="columnRegNumber" msprop:Generator_UserColumnName="RegNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_UserColumnName="Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ManufactureDate" msprop:Generator_ColumnPropNameInRow="ManufactureDate" msprop:Generator_ColumnPropNameInTable="ManufactureDateColumn" msprop:Generator_ColumnVarNameInTable="columnManufactureDate" msprop:Generator_UserColumnName="ManufactureDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="ManufactureName" msprop:Generator_ColumnPropNameInRow="ManufactureName" msprop:Generator_ColumnPropNameInTable="ManufactureNameColumn" msprop:Generator_ColumnVarNameInTable="columnManufactureName" msprop:Generator_UserColumnName="ManufactureName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ManufactureNumber" msprop:Generator_ColumnPropNameInRow="ManufactureNumber" msprop:Generator_ColumnPropNameInTable="ManufactureNumberColumn" msprop:Generator_ColumnVarNameInTable="columnManufactureNumber" msprop:Generator_UserColumnName="ManufactureNumber" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
